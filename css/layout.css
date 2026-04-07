@@ -116,7 +116,14 @@
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: .9rem 0; overflow: hidden;
+  position: relative;
 }
+.logo-bar::before, .logo-bar::after {
+  content: ''; position: absolute; top: 0; bottom: 0;
+  width: 120px; z-index: 2; pointer-events: none;
+}
+.logo-bar::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+.logo-bar::after { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
 .ticker-wrap {
   display: flex; gap: 4rem;
   animation: ticker 40s linear infinite;
