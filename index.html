@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mazul — Agentes de IA para Empresas Brasileiras</title>
+  <meta name="description" content="Agentes de IA 100% customizados para empresas brasileiras. A Mazul constrói e opera — você só vê o resultado. Do diagnóstico ao ar em 48h.">
+  <meta name="keywords" content="agentes de IA, automação empresarial, inteligência artificial Brasil, AI para empresas, agente de vendas IA, atendimento automatizado">
+  <meta name="author" content="Mazul Solutions">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta http-equiv="content-language" content="pt-BR">
+  <meta name="theme-color" content="#060608">
+  <meta name="msapplication-TileColor" content="#060608">
+  <link rel="canonical" href="https://mazul.com.br">
+  <link rel="alternate" hreflang="pt-BR" href="https://mazul.com.br">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mazul — Agentes de IA que trabalham por você">
+  <meta property="og:description" content="Software por baixo. Resultado na frente. Agentes customizados para empresas brasileiras. Resultado em 48h.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80">
+  <meta property="og:url" content="https://mazul.com.br">
+  <meta property="og:locale" content="pt_BR">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mazul — Agentes de IA que trabalham por você">
+  <meta name="twitter:description" content="Software por baixo. Resultado na frente.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAAQEAAAEAGAAwAAAAFgAAACgAAAABAAAAAgAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" type="image/x-icon">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2300BFFF' fill-opacity='.15'/><path d='M7 24V10l9 10 9-10v14' stroke='%2300BFFF' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2300BFFF'/><path d='M7 24V10l9 10 9-10v14' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <!-- Schema FAQ -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"O que exatamente a Mazul entrega?","acceptedAnswer":{"@type":"Answer","text":"A Mazul entrega um agente de IA totalmente customizado para o seu processo, integrado com seus sistemas e operado continuamente pela nossa equipe. Você não opera nada — recebe os resultados."}},
+    {"@type":"Question","name":"Quanto tempo até o agente estar funcionando?","acceptedAnswer":{"@type":"Answer","text":"48 horas do diagnóstico ao primeiro agente em produção para processos com complexidade padrão. Integrações com múltiplos sistemas legados podem levar de 5 a 7 dias úteis."}},
+    {"@type":"Question","name":"Meu time precisa saber usar ferramentas de AI?","acceptedAnswer":{"@type":"Answer","text":"Não. Seu time continua usando as ferramentas que já usa — WhatsApp, CRM, e-mail — e o agente trabalha em paralelo."}},
+    {"@type":"Question","name":"A Mazul é uma plataforma self-service?","acceptedAnswer":{"@type":"Answer","text":"Não. Essa é a diferença central. Você não configura, não treina, não monitora. A Mazul faz tudo isso. Você compra o resultado operado — não a ferramenta."}},
+    {"@type":"Question","name":"Funciona com nosso CRM, ERP ou WhatsApp atual?","acceptedAnswer":{"@type":"Answer","text":"Sim. Integramos com HubSpot, Salesforce, RD Station, Pipedrive, SAP, TOTVS, Omie, WhatsApp Business, Slack e qualquer sistema com API REST."}},
+    {"@type":"Question","name":"Como funciona o modelo de precificação?","acceptedAnswer":{"@type":"Answer","text":"Setup inicial para construção e integração, mais retainer mensal por agente ativo que cobre operação, monitoramento, ajustes e relatórios."}},
+    {"@type":"Question","name":"O agente aprende e melhora com o uso?","acceptedAnswer":{"@type":"Answer","text":"Sim. Cada interação gera dados que a Mazul analisa semanalmente. Após 90 dias, a maioria dos agentes performa 30 a 50% melhor."}},
+    {"@type":"Question","name":"Em quais canais o agente pode operar?","acceptedAnswer":{"@type":"Answer","text":"WhatsApp, email, chat no site, Instagram DM, Telegram, Slack, Teams e via API para qualquer sistema interno."}}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Mazul Solutions","description":"Empresa brasileira que constrói e opera agentes de IA 100% customizados.","url":"https://mazul.com.br","contactPoint":{"@type":"ContactPoint","contactType":"customer service","areaServed":"BR","availableLanguage":"Portuguese"}}
+  </script>
+</head>
+<body>
+
+  <a href="#o-que-fazemos" class="skip-nav">Ir para o conteúdo principal</a>
+
+  <!-- Progress bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Mobile Menu -->
+  <div id="nav-mobile" class="liquid-glass">
+    <button class="close-btn" id="closeMenu" aria-label="Fechar menu">&times;</button>
+    <a href="#o-que-fazemos" class="mobile-link">O que fazemos</a>
+    <a href="#verticais" class="mobile-link">Verticais</a>
+    <a href="#como-funciona" class="mobile-link">Como funciona</a>
+    <a href="#comparativo" class="mobile-link">Por que a Mazul</a>
+    <a href="#contato" class="btn-p" style="margin-top:1rem">Agendar diagnóstico &rarr;</a>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="nav" class="liquid-glass">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Mazul">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#00BFFF" fill-opacity="0.12"/><path d="M7 24V10l9 10 9-10v14" stroke="#00BFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <span class="logo-text">MA<span class="logo-z">Z</span>UL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#o-que-fazemos">O que fazemos</a></li>
+        <li><a href="#verticais">Verticais</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#comparativo">Por que a Mazul</a></li>
+      </ul>
+      <a href="#contato" class="btn-nav">Agendar diagnóstico</a>
+      <div class="nav-ham" id="hamburger" role="button" aria-label="Abrir menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <video id="hero-video" muted playsinline preload="auto" aria-hidden="true"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;opacity:0;z-index:0"></video>
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=75"
+           alt="Vista de montanhas ao amanhecer representando escala e visão" loading="eager" id="hero-img" fetchpriority="high" width="1920" height="1080">
+    </div>
+    <div class="hero-grid"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-scan"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        AGENTES DE IA OPERADOS PARA VOCÊ
+      </div>
+      <h1 class="t-display hero-title" id="hero-title">
+        <span class="line-wrap"><span class="line">Seu negócio,</span></span>
+        <span class="line-wrap"><span class="line" style="opacity:.85">operado por</span></span>
+        <span class="line-wrap"><span class="line"><em class="serif-italic">inteligência.</em></span></span>
+      </h1>
+      <div class="hero-accent-line"></div>
+      <p class="t-body hero-sub" id="hero-sub">
+        A Mazul constrói e opera agentes de IA 100% customizados para o seu setor.<br>
+        Você define o resultado — nós entregamos a operação.
+      </p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="#contato" class="btn-p">Agendar diagnóstico gratuito &rarr;</a>
+        <a href="#o-que-fazemos" class="btn-g">Como funciona &darr;</a>
+      </div>
+    </div>
+    <div class="hero-scroll" id="hero-scroll">
+      <div class="h-scroll-line"></div>
+      <span class="t-cap">scroll</span>
+    </div>
+    <div class="hero-stats" id="hero-stats">
+      <div class="hero-stat" style="padding:.5rem 1rem;border-radius:10px">
+        <div class="h-stat-num">+200<span class="accent">K</span></div>
+        <div class="h-stat-label">interações processadas</div>
+      </div>
+      <div class="hero-stat" style="text-align:right">
+        <div class="h-stat-num"><span class="accent">6&times;</span></div>
+        <div class="h-stat-label">TAM vs. SaaS tradicional</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGO BAR ===== -->
+  <div class="logo-bar">
+    <div class="ticker-wrap">
+      <span class="ticker-item"><span class="ticker-dot"></span>Lend.Tech</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Lupeon</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Automotive LATAM</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Real Estate BR</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>FinTech Co.</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Agribusiness</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Healthcare BR</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Lend.Tech</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Lupeon</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Automotive LATAM</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Real Estate BR</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>FinTech Co.</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Agribusiness</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Healthcare BR</span>
+    </div>
+  </div>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== CONCEITO ===== -->
+  <section id="o-que-fazemos">
+    <div class="sec">
+      <div class="conceito-split">
+        <div class="fade-up">
+          <span class="t-eye">O que é a Mazul</span>
+          <h2 class="t-h1" style="margin:1.25rem 0 1.5rem">Software por baixo.<br>Resultado <em class="serif-italic">na frente.</em></h2>
+          <p class="t-body" style="max-width:480px">
+            A diferença entre a Mazul e qualquer plataforma de AI é simples: você não opera nada.
+            A Mazul constrói o agente do zero para o seu processo, integra com seus sistemas e opera
+            continuamente. Você vê o resultado.
+          </p>
+          <ul class="bullets">
+            <li class="bullet"><span class="bullet-icon">&check;</span> Agente 100% personalizado para o seu processo</li>
+            <li class="bullet"><span class="bullet-icon">&check;</span> Você não opera nada — só vê o resultado</li>
+            <li class="bullet"><span class="bullet-icon">&check;</span> Escala sem aumentar seu time</li>
+            <li class="bullet"><span class="bullet-icon">&check;</span> Inteligência que fica no seu negócio, não em nós</li>
+          </ul>
+        </div>
+        <div class="fade-up">
+          <div class="agent-canvas liquid-glass">
+            <div class="ac-bar">
+              <div class="ac-dots"><div class="ac-dot"></div><div class="ac-dot"></div><div class="ac-dot"></div></div>
+              <div class="ac-title">Mazul Agent — Briefing Executivo &middot; Financeiro</div>
+            </div>
+            <div class="ac-status">
+              <span class="ac-status-dot"></span>
+              <span style="color:var(--accent);font-weight:500">ATIVO</span>
+              <span style="margin-left:auto;color:var(--text-2)">Alertas hoje: <span data-live-count>12</span></span>
+            </div>
+            <div class="ac-body">
+              <div class="ac-section-label">Últimas notificações</div>
+              <div class="ac-log">
+                <div class="ac-log-item">
+                  <span class="ac-log-icon" style="color:var(--green)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Briefing semanal enviado ao CEO — 08:00
+                  <span class="ac-log-time">08:01</span>
+                </div>
+                <div class="ac-log-item">
+                  <span class="ac-log-icon" style="color:#F59E0B">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  </span>
+                  Alerta: margem operacional abaixo de 18%
+                  <span class="ac-log-time">10:47</span>
+                </div>
+                <div class="ac-log-item">
+                  <span class="ac-log-icon" style="color:var(--green)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  1.847 NFs conciliadas — zero divergências
+                  <span class="ac-log-time">11:30</span>
+                </div>
+                <div class="ac-log-item active">
+                  <span class="ac-log-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                  </span>
+                  Gerando análise de inadimplência Q2...<span class="ac-cursor">_</span>
+                  <span class="ac-log-time">agora</span>
+                </div>
+              </div>
+              <div class="ac-metrics">
+                <div class="ac-metric">
+                  <div class="ac-metric-val">R$&nbsp;2.4M</div>
+                  <div class="ac-metric-label">Receita monitorada</div>
+                </div>
+                <div class="ac-metric">
+                  <div class="ac-metric-val">0</div>
+                  <div class="ac-metric-label">Divergências</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TICKER AREAS ===== -->
+  <div class="ticker-areas">
+    <div class="ticker-wrap2">
+      <span class="ticker-area-item">COMERCIAL</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">FINANCEIRO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">ATENDIMENTO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">RH</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">JURÍDICO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">GESTÃO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">MARKETING</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">LOGÍSTICA</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">SUPORTE</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">COMPRAS</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">OPERAÇÕES</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">ESTRATÉGIA</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">COMERCIAL</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">FINANCEIRO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">ATENDIMENTO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">RH</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">JURÍDICO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">GESTÃO</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">MARKETING</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">LOGÍSTICA</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">SUPORTE</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">COMPRAS</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">OPERAÇÕES</span><span class="ticker-area-sep"> &middot; </span>
+      <span class="ticker-area-item">ESTRATÉGIA</span>
+    </div>
+  </div>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== COMPARATIVO ===== -->
+  <section class="section-comp" id="comparativo">
+    <div style="max-width:var(--max);margin:0 auto">
+      <div class="comp-intro fade-up">
+        <div>
+          <span class="t-eye">Por que a Mazul</span>
+          <h2 class="t-h1" style="margin:1.25rem 0">
+            Não é plataforma.<br>Não é consultoria.<br><em class="serif-italic">É resultado.</em>
+          </h2>
+        </div>
+        <div>
+          <p style="font-family:var(--font-b);font-size:.95rem;color:var(--text-2);line-height:1.7;font-weight:300">
+            Toda plataforma de AI te vende uma ferramenta e te deixa sozinho para operar.
+            A Mazul entrega o agente funcionando — e continua operando por você.
+            Compare com as alternativas e entenda por que empresas brasileiras escolhem resultado operado.
+          </p>
+        </div>
+      </div>
+      <div class="comp-table-wrap fade-up">
+        <table class="ct" style="margin-top:1.5rem">
+          <thead>
+            <tr>
+              <th>Critério</th>
+              <th>Plataforma de AI<br><small style="font-weight:300;opacity:.6">(Dust, StackAI, Kore.ai)</small></th>
+              <th>Consultoria Tradicional</th>
+              <th class="th-mazul">Mazul</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tempo para resultado</td>
+              <td><span class="ct-x">&cross;</span> 3–6 meses</td>
+              <td><span class="ct-maybe">~</span> Indefinido</td>
+              <td class="td-mazul"><span class="ct-check">&check;</span> 48 horas</td>
+            </tr>
+            <tr>
+              <td>Quem opera o agente</td>
+              <td><span class="ct-x">&cross;</span> Seu time</td>
+              <td><span class="ct-x">&cross;</span> Terceiro temporário</td>
+              <td class="td-mazul"><span class="ct-check">&check;</span> Mazul, sempre</td>
+            </tr>
+            <tr>
+              <td>Nível de customização</td>
+              <td><span class="ct-maybe">~</span> Template + config</td>
+              <td><span class="ct-maybe">~</span> Documento entregável</td>
+              <td class="td-mazul"><span class="ct-check">&check;</span> 100% do zero</td>
+            </tr>
+            <tr>
+              <td>Precisa de equipe de TI</td>
+              <td><span class="ct-x">&cross;</span> Sim</td>
+              <td><span class="ct-maybe">~</span> Às vezes</td>
+              <td class="td-mazul"><span class="ct-check">&check;</span> Não</td>
+            </tr>
+            <tr>
+              <td>Idioma e suporte</td>
+              <td><span class="ct-x">&cross;</span> Inglês</td>
+              <td><span class="ct-maybe">~</span> Varia</td>
+              <td class="td-mazul"><span class="ct-check">&check;</span> Português BR</td>
+            </tr>
+            <tr>
+              <td>Previsibilidade de resultado</td>
+              <td><span class="ct-x">&cross;</span> Incerta</td>
+              <td><span class="ct-x">&cross;</span> Incerta</td>
+              <td class="td-mazul"><span class="ct-check">&check;</span> Contratual</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== PARA QUEM É ===== -->
+  <section id="para-quem" style="padding:var(--sec) var(--gap)">
+    <div style="max-width:var(--max);margin:0 auto">
+      <div class="fade-up" style="text-align:center;margin-bottom:4rem">
+        <span class="t-eye" style="justify-content:center">PARA QUEM É</span>
+        <h2 class="t-h1" style="margin-top:1.25rem;max-width:640px;margin-left:auto;margin-right:auto">A Mazul é certa para você?</h2>
+      </div>
+      <div class="pq-grid fade-up">
+        <div class="pq-col pq-yes liquid-glass">
+          <div class="pq-col-header">
+            <div class="pq-col-icon">&check;</div>
+            <div class="pq-col-title">A Mazul é para você se...</div>
+          </div>
+          <ul class="pq-list">
+            <li class="pq-item"><span class="pq-check">&check;</span><span>Você tem processos repetitivos que consomem tempo do seu time todo dia</span></li>
+            <li class="pq-item"><span class="pq-check">&check;</span><span>Você quer resultado em dias, não em meses de implementação</span></li>
+            <li class="pq-item"><span class="pq-check">&check;</span><span>Você não tem equipe de TI para operar ferramentas complexas</span></li>
+            <li class="pq-item"><span class="pq-check">&check;</span><span>Seu time usa WhatsApp, CRM ou ERP e você quer que a IA trabalhe ali</span></li>
+            <li class="pq-item"><span class="pq-check">&check;</span><span>Você quer escalar sem contratar na mesma proporção</span></li>
+            <li class="pq-item"><span class="pq-check">&check;</span><span>Você prefere pagar por resultado do que por ferramenta que vai precisar aprender</span></li>
+          </ul>
+        </div>
+        <div class="pq-divider"></div>
+        <div class="pq-col pq-no liquid-glass">
+          <div class="pq-col-header">
+            <div class="pq-col-icon pq-col-icon--no">&cross;</div>
+            <div class="pq-col-title">Talvez não seja para você se...</div>
+          </div>
+          <ul class="pq-list">
+            <li class="pq-item pq-item--no"><span class="pq-x">&cross;</span><span>Você quer aprender e operar a IA internamente</span></li>
+            <li class="pq-item pq-item--no"><span class="pq-x">&cross;</span><span>Você procura uma plataforma self-service para configurar sozinho</span></li>
+            <li class="pq-item pq-item--no"><span class="pq-x">&cross;</span><span>Você ainda não tem um processo definido que precisa automatizar</span></li>
+            <li class="pq-item pq-item--no"><span class="pq-x">&cross;</span><span>Seu negócio tem menos de 10 pessoas e você mesmo atende todos os clientes</span></li>
+            <li class="pq-item pq-item--no"><span class="pq-x">&cross;</span><span>Você precisa de um relatório ou apresentação, não de execução contínua</span></li>
+          </ul>
+          <div class="pq-note">Sem julgamento — existem ferramentas certas para cada momento. Se a Mazul não for o fit agora, podemos te indicar o caminho certo.</div>
+        </div>
+      </div>
+      <div class="fade-up" style="text-align:center;margin-top:3.5rem">
+        <p class="t-body" style="max-width:400px;margin:0 auto 1.75rem">Se você se reconheceu na coluna da esquerda, o diagnóstico gratuito vai mostrar exatamente onde começar.</p>
+        <a href="#contato" class="btn-p">Quero o diagnóstico gratuito &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== VERTICAIS ===== -->
+  <section class="section-vert" id="verticais">
+    <div class="vert-header wrap">
+      <div class="fade-up">
+        <span class="t-eye">Onde a Mazul opera</span>
+        <h2 class="t-h1" style="margin:1.25rem 0 1rem">Agentes para cada parte<br>do seu negócio.</h2>
+        <p class="t-body" style="max-width:460px">Se existe um processo repetitivo, existe um agente para ele. Cada um construído do zero para o seu contexto.</p>
+      </div>
+    </div>
+    <div class="vert-grid wrap">
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div class="vc-title">Comercial & Vendas</div>
+        <div class="vc-desc">Qualificação e nutrição de leads 24/7. Agendamento automático de reuniões com decisores. Pipeline que se alimenta sozinho.</div>
+        <div class="vc-tags"><span class="tag">SDR Autopilot</span><span class="tag">Outreach</span><span class="tag">Lead Scoring</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+        <div class="vc-title">Financeiro</div>
+        <div class="vc-desc">Conciliação bancária automatizada, análise de inadimplência, relatórios de fluxo de caixa toda segunda às 8h.</div>
+        <div class="vc-tags"><span class="tag">Conciliação</span><span class="tag">Relatórios</span><span class="tag">Alertas</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <div class="vc-title">Atendimento & CS</div>
+        <div class="vc-desc">Respostas instantâneas via WhatsApp, chat e email. 87% resolvidas sem humano. Escalona com contexto completo.</div>
+        <div class="vc-tags"><span class="tag">WhatsApp</span><span class="tag">Chat</span><span class="tag">Voz</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+        <div class="vc-title">RH & Recrutamento</div>
+        <div class="vc-desc">Triagem de currículos, onboarding automatizado, pesquisas de clima com análise de sentimento em tempo real.</div>
+        <div class="vc-tags"><span class="tag">Triagem</span><span class="tag">Onboarding</span><span class="tag">Clima</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+        <div class="vc-title">Gestão & Operações</div>
+        <div class="vc-desc">Dashboards com linguagem natural, alertas preditivos e resumos executivos automatizados toda semana.</div>
+        <div class="vc-tags"><span class="tag">BI</span><span class="tag">Automação</span><span class="tag">Dashboards</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+        <div class="vc-title">Jurídico</div>
+        <div class="vc-desc">Análise de contratos, extração de cláusulas críticas, monitoramento de prazos e compliance automatizado.</div>
+        <div class="vc-tags"><span class="tag">Contratos</span><span class="tag">Compliance</span><span class="tag">Docs</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+        <div class="vc-title">Marketing & Conteúdo</div>
+        <div class="vc-desc">Geração de conteúdo contextualizado, segmentação inteligente e campanhas automatizadas por canal.</div>
+        <div class="vc-tags"><span class="tag">Conteúdo</span><span class="tag">Campanhas</span><span class="tag">Social</span></div>
+      </div>
+      <div class="vc">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
+        <div class="vc-title">Logística & Supply</div>
+        <div class="vc-desc">Rastreamento inteligente, otimização de rotas e comunicação proativa com clientes sobre entregas.</div>
+        <div class="vc-tags"><span class="tag">TMS</span><span class="tag">Conciliação</span><span class="tag">Fornecedores</span></div>
+      </div>
+      <div class="vc hl">
+        <span class="vc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+        <div class="vc-title" style="color:var(--accent)">Seu processo aqui</div>
+        <div class="vc-desc">Não viu o seu setor? Construímos agentes para qualquer processo repetitivo. Agende um diagnóstico gratuito.</div>
+        <div class="vc-tags"><a href="#contato" class="tag" style="color:var(--accent);border-color:var(--accent-border)">fale conosco &rarr;</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTEGRACOES ===== -->
+  <section id="integracoes">
+    <div class="sec integ-center">
+      <span class="t-eye" style="justify-content:center">Integrações</span>
+      <h2 class="t-h1" style="margin:1.25rem auto 1rem">Conecta com o que<br>você já usa.</h2>
+      <p class="t-body" style="max-width:480px;margin:0 auto">
+        O agente se integra nativamente com seus sistemas.
+        Sem migração. Sem substituição. Sem re-treinamento.
+      </p>
+      <div class="integ-marquee-wrap">
+        <div class="integ-track integ-track--fwd">
+          <span class="integ-badge liquid-glass">WhatsApp Business</span>
+          <span class="integ-badge liquid-glass">Salesforce</span>
+          <span class="integ-badge liquid-glass">HubSpot</span>
+          <span class="integ-badge liquid-glass">RD Station</span>
+          <span class="integ-badge liquid-glass">Pipedrive</span>
+          <span class="integ-badge liquid-glass">SAP</span>
+          <span class="integ-badge liquid-glass">TOTVS</span>
+          <span class="integ-badge liquid-glass">Omie</span>
+          <span class="integ-badge liquid-glass">Conta Azul</span>
+          <span class="integ-badge liquid-glass">Gmail / Outlook</span>
+          <span class="integ-badge liquid-glass">WhatsApp Business</span>
+          <span class="integ-badge liquid-glass">Salesforce</span>
+          <span class="integ-badge liquid-glass">HubSpot</span>
+          <span class="integ-badge liquid-glass">RD Station</span>
+          <span class="integ-badge liquid-glass">Pipedrive</span>
+          <span class="integ-badge liquid-glass">SAP</span>
+          <span class="integ-badge liquid-glass">TOTVS</span>
+          <span class="integ-badge liquid-glass">Omie</span>
+          <span class="integ-badge liquid-glass">Conta Azul</span>
+          <span class="integ-badge liquid-glass">Gmail / Outlook</span>
+        </div>
+        <div class="integ-track integ-track--rev">
+          <span class="integ-badge liquid-glass">Slack</span>
+          <span class="integ-badge liquid-glass">Teams</span>
+          <span class="integ-badge liquid-glass">Zendesk</span>
+          <span class="integ-badge liquid-glass">Freshdesk</span>
+          <span class="integ-badge liquid-glass">Telegram</span>
+          <span class="integ-badge liquid-glass">Google Sheets</span>
+          <span class="integ-badge liquid-glass">Notion</span>
+          <span class="integ-badge liquid-glass">Airtable</span>
+          <span class="integ-badge liquid-glass">Bling</span>
+          <span class="integ-badge liquid-glass">Slack</span>
+          <span class="integ-badge liquid-glass">Teams</span>
+          <span class="integ-badge liquid-glass">Zendesk</span>
+          <span class="integ-badge liquid-glass">Freshdesk</span>
+          <span class="integ-badge liquid-glass">Telegram</span>
+          <span class="integ-badge liquid-glass">Google Sheets</span>
+          <span class="integ-badge liquid-glass">Notion</span>
+          <span class="integ-badge liquid-glass">Airtable</span>
+          <span class="integ-badge liquid-glass">Bling</span>
+        </div>
+      </div>
+      <p class="integ-more">+ qualquer sistema com API REST disponível</p>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section id="como-funciona">
+    <div class="sec">
+      <div class="steps-header fade-up">
+        <span class="t-eye">Processo</span>
+        <h2 class="t-h1" style="margin:1.25rem 0 0">Do diagnóstico ao<br>resultado em dias.</h2>
+      </div>
+    </div>
+    <div class="steps-grid wrap">
+      <div class="step fade-up">
+        <div class="step-num">01</div>
+        <div class="step-title">Diagnóstico de processo</div>
+        <p class="step-body">Mapeamos o processo que mais consome tempo no seu time. Entendemos regras, exceções, volume e canais envolvidos.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">02</div>
+        <div class="step-title">Construção customizada</div>
+        <p class="step-body">O agente é construído do zero para o seu caso — não é template. Conhecimento do seu negócio, linguagem do seu setor.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">03</div>
+        <div class="step-title">Integração & ativação</div>
+        <p class="step-body">Conectamos com CRM, WhatsApp, ERP ou qualquer ferramenta. Ativamos em produção com monitoramento em tempo real.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num" style="border-color:var(--accent);color:var(--accent)">04</div>
+        <div class="step-title">Gestão contínua</div>
+        <p class="step-body">A Mazul monitora, ajusta e evolui o agente continuamente. Você acompanha o resultado. Nós cuidamos da operação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARQUITETURA ===== -->
+  <section class="section-arch" id="arquitetura">
+    <div class="arch-intro wrap fade-up">
+      <div>
+        <span class="t-eye">Como é construído</span>
+        <h2 class="t-h1" style="margin:1.25rem 0 1rem">Feito para o seu negócio.<br><em class="serif-italic-muted">Não para todos.</em></h2>
+      </div>
+      <div>
+        <p class="t-body">Cada agente passa por 4 camadas de construção antes de entrar em operação. Nenhuma etapa é pulada. Nenhum template é reutilizado.</p>
+      </div>
+    </div>
+    <div class="arch-grid wrap">
+      <div class="arch-card" data-num="01">
+        <div class="arch-num">01 — DADOS</div>
+        <div class="arch-title">Conexão com seus sistemas</div>
+        <div class="arch-body">Conectamos com CRM, ERP, WhatsApp e qualquer fonte de dados sem migração. Zero replicação, zero risco.</div>
+        <span class="arch-arr">&rarr;</span>
+      </div>
+      <div class="arch-card" data-num="02">
+        <div class="arch-num">02 — CONHECIMENTO</div>
+        <div class="arch-title">Treinamento no seu contexto</div>
+        <div class="arch-body">O agente aprende o vocabulário, regras, objeções e processos específicos do seu negócio e setor.</div>
+        <span class="arch-arr">&rarr;</span>
+      </div>
+      <div class="arch-card" data-num="03">
+        <div class="arch-num">03 — RACIOCÍNIO</div>
+        <div class="arch-title">Motor de decisão customizado</div>
+        <div class="arch-body">Definimos a lógica de decisão: quando agir, quando escalar, como responder, o que registrar.</div>
+        <span class="arch-arr">&rarr;</span>
+      </div>
+      <div class="arch-card hl" data-num="04">
+        <div class="arch-num">04 — OPERAÇÃO</div>
+        <div class="arch-title">Agente em produção, operado por nós</div>
+        <div class="arch-body">O agente vai ao ar. A Mazul monitora, ajusta e evolui continuamente. Você vê só o resultado.</div>
+        <span class="arch-arr" style="color:var(--accent)">&starf;</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== FEATURE BLOCK 1 — Pipeline ===== -->
+  <div class="fb odd" id="fb1">
+    <div class="fb-bg"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400&q=70" alt="Vale profundo com luz natural" loading="lazy" class="parallax-img" width="1400" height="900"></div>
+    <div class="fb-content">
+      <span class="t-eye">Pipeline inteligente</span>
+      <h2 class="fb-title">Pipeline que se<br>alimenta sozinho.</h2>
+      <div class="fb-bullets">
+        <div class="fb-bullet">Qualificação automática de leads por scoring</div>
+        <div class="fb-bullet">Agendamento de reuniões sem intervenção humana</div>
+        <div class="fb-bullet">Priorização por probabilidade de fechamento</div>
+      </div>
+      <a href="#contato" class="fb-link">Agendar diagnóstico &rarr;</a>
+    </div>
+    <div class="fb-mockup">
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="mock-title">pipeline.monitor</span>
+          <span class="mock-status">live</span>
+        </div>
+        <div class="mock-row"><span>Prospecção</span><span class="mock-val">1.247</span></div>
+        <div class="mock-row"><span>Qualificados</span><span class="mock-val pos">847</span></div>
+        <div class="mock-row"><span>Reuniões</span><span class="mock-val acc">312</span></div>
+        <div class="mock-row"><span>Taxa geral</span><span class="mock-val pos">68%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURE BLOCK 2 — Atendimento ===== -->
+  <div class="fb even" id="fb2">
+    <div class="fb-bg"><img src="https://images.unsplash.com/photo-1511884642898-4c92516a7a0f?w=1400&q=70" alt="Floresta densa com vegetação exuberante" loading="lazy" class="parallax-img" width="1400" height="900"></div>
+    <div class="fb-content">
+      <span class="t-eye">Atendimento 24/7</span>
+      <h2 class="fb-title">Seu cliente respondido<br>em segundos.</h2>
+      <div class="fb-bullets">
+        <div class="fb-bullet">87% das interações resolvidas sem humano</div>
+        <div class="fb-bullet">Escalona para o time com contexto completo</div>
+        <div class="fb-bullet">Integrado ao CRM em tempo real</div>
+      </div>
+      <a href="#contato" class="fb-link">Agendar diagnóstico &rarr;</a>
+    </div>
+    <div class="fb-mockup">
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="mock-title">chat.agent</span>
+          <span class="mock-status">online</span>
+        </div>
+        <div class="chat-msgs">
+          <div class="chat-msg in">Oi, preciso de ajuda com meu pedido #4521</div>
+          <div class="chat-msg out">Encontrei seu pedido. Está em trânsito e chega amanhã até 14h. Posso ajudar em mais algo?</div>
+          <div class="chat-msg in">Consigo mudar o endereço de entrega?</div>
+          <div class="chat-msg out">Sim! Acabei de atualizar para o novo endereço. Confirmação enviada por email.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURE BLOCK 3 — Financeiro ===== -->
+  <div class="fb odd" id="fb3">
+    <div class="fb-bg"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&q=70" alt="Paisagem aberta com horizonte amplo" loading="lazy" class="parallax-img" width="1400" height="900"></div>
+    <div class="fb-content">
+      <span class="t-eye">Gestão financeira</span>
+      <h2 class="fb-title">Clareza financeira<br>sem trabalho manual.</h2>
+      <div class="fb-bullets">
+        <div class="fb-bullet">Conciliação bancária 100% automatizada</div>
+        <div class="fb-bullet">Relatórios toda segunda às 8h no seu email</div>
+        <div class="fb-bullet">Alertas proativos de divergências</div>
+      </div>
+      <a href="#contato" class="fb-link">Agendar diagnóstico &rarr;</a>
+    </div>
+    <div class="fb-mockup">
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="mock-title">finance.report</span>
+          <span class="mock-status">atualizado</span>
+        </div>
+        <div class="mock-row"><span>Receita mensal</span><span class="mock-val pos">R$ 2.4M</span></div>
+        <div class="mock-row"><span>Custo fixo</span><span class="mock-val">R$ 890K</span></div>
+        <div class="mock-row"><span>NFs auditadas</span><span class="mock-val acc">1.847</span></div>
+        <div class="mock-row"><span>Divergências</span><span class="mock-val pos">0</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STATS ===== -->
+  <div class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card liquid-glass">
+        <div class="stat-num-row">
+          <span class="stat-prefix" id="s1">200</span>
+          <span class="stat-suffix">K+</span>
+        </div>
+        <div class="stat-label">interações processadas</div>
+      </div>
+      <div class="stat-card liquid-glass">
+        <div class="stat-num-row">
+          <span class="stat-prefix" id="s2">87</span>
+          <span class="stat-suffix">%</span>
+        </div>
+        <div class="stat-label">taxa média de qualificação</div>
+      </div>
+      <div class="stat-card liquid-glass">
+        <div class="stat-num-row">
+          <span class="stat-prefix" id="s3">3</span>
+          <span class="stat-suffix">&times;</span>
+        </div>
+        <div class="stat-label">mais resultado no mesmo time</div>
+      </div>
+      <div class="stat-card liquid-glass">
+        <div class="stat-num-row">
+          <span class="stat-prefix" id="s4">48</span>
+          <span class="stat-suffix">h</span>
+        </div>
+        <div class="stat-label">do diagnóstico ao primeiro agente</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section style="position:relative;padding:var(--sec) var(--gap);overflow:hidden" id="depoimentos">
+    <div style="position:absolute;inset:0;z-index:0">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=40"
+           alt="" loading="lazy" width="1920" height="1080"
+           style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.2);opacity:0.06">
+    </div>
+    <div style="position:relative;z-index:1;max-width:var(--max);margin:0 auto">
+      <span class="t-eye fade-up">Quem já usa</span>
+      <h2 class="t-h1 fade-up" style="margin:1.25rem 0 0">Resultados reais.<br>Empresas reais.</h2>
+      <div class="proof-stats fade-up" style="margin-top:2.5rem">
+        <div>
+          <div class="proof-stat-num">+40</div>
+          <div class="proof-stat-label">clientes ativos</div>
+        </div>
+        <div>
+          <div class="proof-stat-num">8+ <span class="accent">verticais</span></div>
+          <div class="proof-stat-label">verticais atendidas</div>
+        </div>
+        <div>
+          <div class="proof-stat-num">100%</div>
+          <div class="proof-stat-label">time brasileiro</div>
+        </div>
+      </div>
+    </div>
+    <div class="test-grid wrap" style="position:relative;z-index:1">
+      <div class="test-card liquid-glass fade-up">
+        <div class="test-header">
+          <div class="test-avatar">JP</div>
+          <div>
+            <div class="test-name">João Prioli</div>
+            <div class="test-role">SDR Manager</div>
+          </div>
+          <span class="test-company">Lend.Tech</span>
+        </div>
+        <div class="test-quote">Antes de implementar o agente da Mazul, nosso time gastava 60% do tempo qualificando leads manualmente. Hoje isso é completamente automático — e a taxa de conversão subiu 40% no primeiro mês.</div>
+      </div>
+      <div class="test-card liquid-glass fade-up">
+        <div class="test-header">
+          <div class="test-avatar">JF</div>
+          <div>
+            <div class="test-name">José Fernando</div>
+            <div class="test-role">Diretor de Operações</div>
+          </div>
+          <span class="test-company">Lupeon</span>
+        </div>
+        <div class="test-quote">O agente de gestão de frete que a Mazul construiu processa 3 vezes mais NFs do que nossa equipe anterior. Com zero erro de conciliação. Em 48 horas estava em produção.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section-faq" id="faq">
+    <div class="faq-layout">
+      <div class="faq-sticky fade-up">
+        <span class="t-eye">Perguntas frequentes</span>
+        <h2 class="t-h1" style="margin:1.25rem 0 1.5rem">Tem dúvidas?<br>A gente responde.</h2>
+        <p class="t-body" style="margin-bottom:2rem">Não encontrou sua resposta? Fale direto com o nosso time.</p>
+        <a href="#contato" class="btn-p">Agendar diagnóstico &rarr;</a>
+      </div>
+      <ul class="faq-list">
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>O que exatamente a Mazul entrega?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Entregamos agentes de IA 100% customizados para o seu processo, integrados com seus sistemas atuais, funcionando em produção e operados continuamente por nós. Você recebe o resultado — não uma ferramenta para operar.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>Quanto tempo até o agente estar funcionando?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">A partir do diagnóstico, o primeiro agente pode estar ativo em 48 horas. Processos mais complexos podem levar de 5 a 10 dias, mas sempre com entregas parciais desde o início.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>Meu time precisa saber usar ferramentas de AI?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Não. Seu time não precisa de nenhum conhecimento técnico. O agente opera sozinho e a Mazul cuida de toda a gestão técnica. Seu time só precisa acompanhar os resultados.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>A Mazul é uma plataforma que eu mesmo configuro?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner"><strong>Não. Esta é a diferença central</strong> entre a Mazul e plataformas como Dust, StackAI ou Kore.ai. Você não configura, não treina, não monitora. A Mazul faz tudo isso. Você compra o resultado operado — não a ferramenta.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>Funciona com nosso CRM/ERP/WhatsApp atual?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Sim. Integramos com qualquer sistema que tenha API disponível — Salesforce, HubSpot, RD Station, Pipedrive, SAP, TOTVS, Omie, WhatsApp Business, Slack, e mais de 50 outras ferramentas.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>Como funciona o modelo de precificação?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Trabalhamos com planos mensais baseados no volume de interações e complexidade do agente. O diagnóstico gratuito define exatamente qual plano faz sentido para o seu caso. Sem surpresas.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>O agente aprende e melhora com o uso?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Sim. A cada interação, o agente coleta feedback e a Mazul aplica ajustes contínuos. A performance tende a aumentar semana após semana, automaticamente.</div></div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>Em quais canais o agente pode operar?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">WhatsApp, email, chat no site, Instagram DM, LinkedIn, Telegram, Slack e Microsoft Teams. O agente pode operar em múltiplos canais simultaneamente, com contexto unificado.</div></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-section" id="contato">
+    <div class="cta-bg">
+      <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=1920&q=40" alt="Floresta com raios de luz entre as árvores" loading="lazy" class="parallax-img" width="1920" height="1080">
+    </div>
+    <div class="cta-particles" aria-hidden="true">
+      <span class="cp cp1"></span><span class="cp cp2"></span><span class="cp cp3"></span>
+    </div>
+    <div class="cta-content fade-up">
+      <span class="t-eye" style="justify-content:center;margin-bottom:1.5rem">Comece agora</span>
+      <h2 class="t-h1" style="margin:0 auto 1.5rem">Pronto para ter IA<br>trabalhando <em class="serif-italic">por você?</em></h2>
+      <p class="t-body" style="max-width:480px;margin:0 auto">
+        Diagnóstico gratuito de 30 minutos. Sem compromisso. Sem pitch.
+        Só análise honesta de onde a IA gera mais ROI no seu negócio.
+      </p>
+      <p style="font-family:var(--font-m);font-size:.7rem;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:-.5rem">
+        Vagas limitadas: agenda abre toda semana
+      </p>
+      <div class="cta-form" id="cta-form">
+        <div style="display:flex;flex-direction:column">
+          <input type="email" id="cta-email" class="field liquid-glass" placeholder="seu@email.com" autocomplete="email" required aria-label="Seu e-mail">
+          <span id="email-error" style="display:none;color:#FF5050;font-size:.75rem;margin-top:.25rem">Email inválido. Verifique e tente novamente.</span>
+        </div>
+        <button type="button" class="btn-p" id="cta-submit">Agendar diagnóstico &rarr;</button>
+      </div>
+      <div class="cta-success" id="cta-success" aria-live="polite">
+        <div class="cs-icon">&check;</div>
+        <div class="cs-title">Recebemos seu contato!</div>
+        <p class="cs-body">Nossa equipe vai entrar em contato em até <strong>24 horas</strong> para confirmar o diagnóstico. Enquanto isso:</p>
+        <a href="https://wa.me/5551999999999?text=Ol%C3%A1%21+Acabei+de+preencher+o+form+do+site+e+quero+agendar+o+diagn%C3%B3stico." target="_blank" rel="noopener" class="cs-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Chamar no WhatsApp agora
+        </a>
+      </div>
+      <a href="https://wa.me/5551999999999" target="_blank" rel="noopener" id="cta-wa-link" style="display:block;margin-top:1.25rem;font-family:var(--font-m);font-size:.78rem;color:var(--accent);letter-spacing:.04em">
+        ou agende pelo WhatsApp &rarr;
+      </a>
+      <div class="cta-trust" id="cta-trust" style="margin-top:1rem">
+        <span>Sem spam</span>
+        <span>Resposta em 24h</span>
+        <span>Time brasileiro</span>
+      </div>
+      <!-- Diagnosis Journey -->
+      <div class="diag-journey fade-up" style="margin-top:3rem">
+        <div class="dj-label">O que acontece depois que você agenda</div>
+        <div class="dj-steps">
+          <div class="dj-step">
+            <div class="dj-num">1</div>
+            <div class="dj-text"><strong>Confirmação imediata</strong><span>E-mail + WhatsApp com o link da reunião</span></div>
+          </div>
+          <div class="dj-arrow">&rarr;</div>
+          <div class="dj-step">
+            <div class="dj-num">2</div>
+            <div class="dj-text"><strong>Reunião de 30 min</strong><span>Mapeamos seus processos. Sem pitch.</span></div>
+          </div>
+          <div class="dj-arrow">&rarr;</div>
+          <div class="dj-step">
+            <div class="dj-num">3</div>
+            <div class="dj-text"><strong>Análise gratuita</strong><span>Onde a IA gera mais ROI no seu negócio</span></div>
+          </div>
+          <div class="dj-arrow">&rarr;</div>
+          <div class="dj-step">
+            <div class="dj-num">4</div>
+            <div class="dj-text"><strong>Decisão sua</strong><span>Avança se fizer sentido. Sem obrigação.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo footer-logo-wrap" aria-label="Mazul">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#00BFFF" fill-opacity="0.12"/><path d="M7 24V10l9 10 9-10v14" stroke="#00BFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          <span class="logo-text">MA<span class="logo-z">Z</span>UL</span>
+        </a>
+        <p class="footer-tagline">Agentes de IA que trabalham por você. Construídos e operados para empresas brasileiras.</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/company/mazul-solutions" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://instagram.com/mazulsolutions" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/5551999999999" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="WhatsApp">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Produto</div>
+        <ul class="footer-links">
+          <li><a href="#o-que-fazemos">O que fazemos</a></li>
+          <li><a href="#verticais">Verticais</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#comparativo">Por que a Mazul</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-disabled" aria-disabled="true">Sobre a Mazul <span class="soon">em breve</span></a></li>
+          <li><a href="#" class="footer-disabled" aria-disabled="true">Cases <span class="soon">em breve</span></a></li>
+          <li><a href="#" class="footer-disabled" aria-disabled="true">Blog <span class="soon">em breve</span></a></li>
+          <li><a href="#" class="footer-disabled" aria-disabled="true">Parceiros <span class="soon">em breve</span></a></li>
+          <li><a href="#" class="footer-disabled" aria-disabled="true">Carreiras <span class="soon">em breve</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <ul class="footer-links">
+          <li><a href="mailto:contato@mazul.com.br">contato@mazul.com.br</a></li>
+          <li><a href="https://wa.me/5551999999999?text=Ol%C3%A1%21+Vim+pelo+site+da+Mazul." target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://linkedin.com/company/mazul-solutions" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#contato" class="accent-link">Agendar diagnóstico &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Mazul Solutions. Todos os direitos reservados.</span>
+      <span class="footer-copy">Torres, RS — Brasil</span>
+      <span class="footer-copy">Made with &hearts; in Brazil</span>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-top" class="liquid-glass" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- WhatsApp Floating -->
+  <a id="wa-btn" href="https://wa.me/5551999999999?text=Ol%C3%A1%21+Vim+pelo+site+e+quero+saber+mais+sobre+os+agentes+da+Mazul." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884z"/></svg>
+    <span class="wa-tooltip">Falar pelo WhatsApp</span>
+  </a>
+
+  <!-- Mobile CTA Bar -->
+  <div id="mobile-cta-bar" class="liquid-glass">
+    <a href="#contato" class="mcta-primary">Agendar diagnóstico</a>
+    <a href="https://wa.me/5551999999999" target="_blank" rel="noopener" class="mcta-wa">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- LGPD Banner -->
+  <div id="lgpd-banner" class="liquid-glass" role="dialog" aria-label="Aviso de cookies" aria-live="polite">
+    <div class="lgpd-inner">
+      <div class="lgpd-text">
+        <strong>Sua privacidade importa.</strong>
+        Usamos cookies para melhorar sua experiência e analisar o desempenho do site, em conformidade com a LGPD.
+      </div>
+      <div class="lgpd-actions">
+        <button id="lgpd-reject" class="lgpd-btn-secondary">Só essenciais</button>
+        <button id="lgpd-accept" class="lgpd-btn-primary">Aceitar todos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
+  <script src="./js/split-type.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

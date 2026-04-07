@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazul — Style Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <style>
+    body { cursor: auto; }
+    .sg { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .sg:last-child { border-bottom: none; }
+    .sg-t { font-family: var(--font-m); font-size: .7rem; text-transform: uppercase; letter-spacing: .15em; color: var(--accent); margin-bottom: 2.5rem; }
+    .sg-l { font-family: var(--font-m); font-size: .62rem; color: var(--text-3); margin-bottom: .5rem; letter-spacing: .05em; }
+    .sg-row { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem; align-items: flex-end; }
+    .sg-sw { width: 100px; }
+    .sg-sw-c { width: 100px; height: 65px; border-radius: 10px; border: 1px solid var(--border-2); margin-bottom: .4rem; }
+    .sg-sw-n { font-family: var(--font-m); font-size: .58rem; color: var(--text-2); }
+    .sg-sw-h { font-family: var(--font-m); font-size: .52rem; color: var(--text-3); }
+    .sg-typo { margin-bottom: 2rem; }
+    .sg-typo-l { font-family: var(--font-m); font-size: .58rem; color: var(--text-3); margin-bottom: .3rem; }
+    .sg-flex { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+    .sg-gap { height: 1.5rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap" style="padding-top:3rem;padding-bottom:5rem">
+
+    <h1 class="t-h1" style="margin-bottom:.5rem">Mazul Style Guide</h1>
+    <p class="t-body" style="margin-bottom:3rem">Design tokens, tipografia, componentes e padrões visuais — Phase 2.</p>
+
+    <!-- 1. CORES -->
+    <div class="sg">
+      <div class="sg-t">1. Cores</div>
+      <div class="sg-l">Core</div>
+      <div class="sg-row">
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--accent)"></div><div class="sg-sw-n">--accent</div><div class="sg-sw-h">#00BFFF</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--accent-dim)"></div><div class="sg-sw-n">--accent-dim</div><div class="sg-sw-h">rgba(0,191,255,.10)</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--accent-glow)"></div><div class="sg-sw-n">--accent-glow</div><div class="sg-sw-h">rgba(0,191,255,.04)</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--accent-border)"></div><div class="sg-sw-n">--accent-border</div><div class="sg-sw-h">rgba(0,191,255,.22)</div></div>
+      </div>
+      <div class="sg-l">Backgrounds</div>
+      <div class="sg-row">
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--bg)"></div><div class="sg-sw-n">--bg</div><div class="sg-sw-h">#060608</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--bg-s)"></div><div class="sg-sw-n">--bg-s</div><div class="sg-sw-h">#0D0D10</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--bg-s2)"></div><div class="sg-sw-n">--bg-s2</div><div class="sg-sw-h">#141418</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--bg-light)"></div><div class="sg-sw-n">--bg-light</div><div class="sg-sw-h">#EDE9E0</div></div>
+      </div>
+      <div class="sg-l">Texto</div>
+      <div class="sg-row">
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--text)"></div><div class="sg-sw-n">--text</div><div class="sg-sw-h">#EDEAE2</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--text-2)"></div><div class="sg-sw-n">--text-2</div><div class="sg-sw-h">#8C8A84</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--text-3)"></div><div class="sg-sw-n">--text-3</div><div class="sg-sw-h">#4A4845</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--text-inv)"></div><div class="sg-sw-n">--text-inv</div><div class="sg-sw-h">#0A0A0C</div></div>
+      </div>
+      <div class="sg-l">Semânticas</div>
+      <div class="sg-row">
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--green)"></div><div class="sg-sw-n">--green</div><div class="sg-sw-h">#22C55E</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--red)"></div><div class="sg-sw-n">--red</div><div class="sg-sw-h">#F87171</div></div>
+        <div class="sg-sw"><div class="sg-sw-c" style="background:var(--amber)"></div><div class="sg-sw-n">--amber</div><div class="sg-sw-h">#FBBF24</div></div>
+      </div>
+    </div>
+
+    <!-- 2. TIPOGRAFIA -->
+    <div class="sg">
+      <div class="sg-t">2. Tipografia</div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-display — Syne 800</div><div class="t-display">Seu negócio, operado.</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-h1 — Syne 800</div><div class="t-h1">Software por baixo. Resultado na frente.</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-h2 — Syne 700</div><div class="t-h2">Cada agente é único.</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-h3 — Syne 700</div><div class="t-h3">Comercial & Vendas</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-eye — DM Mono 400, uppercase</div><span class="t-eye">O que é a Mazul</span></div>
+      <div class="sg-gap"></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-body — DM Sans 300</div><div class="t-body">A Mazul constrói e opera agentes de IA 100% customizados para o seu setor.</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-sm — DM Sans 300, smaller</div><div class="t-sm">Texto secundário com peso leve para complemento de informações.</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-stat — Syne 800</div><div class="t-stat">+200<span class="accent">K</span></div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-mono — DM Mono 400</div><div class="t-mono">contato@mazul.com.br</div></div>
+      <div class="sg-typo"><div class="sg-typo-l">.t-cap — DM Mono 300</div><div class="t-cap">scroll &middot; interações &middot; 14:32</div></div>
+    </div>
+
+    <!-- 3. BOTÕES -->
+    <div class="sg">
+      <div class="sg-t">3. Botões</div>
+      <div class="sg-flex">
+        <a href="#" class="btn-p">Agendar diagnóstico &rarr;</a>
+        <a href="#" class="btn-g">Como funciona &darr;</a>
+        <a href="#" class="btn-nav">Agendar diagnóstico</a>
+      </div>
+    </div>
+
+    <!-- 4. BADGES & TAGS -->
+    <div class="sg">
+      <div class="sg-t">4. Badges & Tags</div>
+      <div class="sg-l">.badge</div>
+      <div class="badge" style="margin-bottom:1.5rem"><span class="badge-dot"></span>AGENTES DE IA OPERADOS PARA VOCÊ</div>
+      <div class="sg-gap"></div>
+      <div class="sg-l">.tag</div>
+      <div class="sg-flex"><span class="tag">SDR Autopilot</span><span class="tag">Conciliação</span><span class="tag">WhatsApp</span></div>
+    </div>
+
+    <!-- 5. CARDS -->
+    <div class="sg">
+      <div class="sg-t">5. Cards</div>
+      <div class="sg-l">.card (base)</div>
+      <div class="card" style="max-width:340px;margin-bottom:2rem">
+        <div class="t-h3" style="margin-bottom:.5rem">Card base</div>
+        <div class="t-sm">Hover para ver a elevação e mudança de borda.</div>
+      </div>
+      <div class="sg-l">.agent-canvas</div>
+      <div class="agent-canvas" style="max-width:380px">
+        <div class="ac-bar">
+          <div class="ac-dots"><div class="ac-dot"></div><div class="ac-dot"></div><div class="ac-dot"></div></div>
+          <div class="ac-title">Mazul Agent — Demo</div>
+        </div>
+        <div class="ac-status">
+          <span class="ac-status-dot"></span>
+          <span style="color:var(--accent);font-weight:500">ATIVO</span>
+          <span style="margin-left:auto;color:var(--text-2)">Interações: 847</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-log">
+            <div class="ac-log-item">
+              <span class="ac-log-icon" style="color:var(--green)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Ação completada com sucesso
+              <span class="ac-log-time">agora</span>
+            </div>
+          </div>
+          <div class="ac-metrics">
+            <div class="ac-metric"><div class="ac-metric-val">92%</div><div class="ac-metric-label">Precisão</div></div>
+            <div class="ac-metric"><div class="ac-metric-val">1.8s</div><div class="ac-metric-label">Latência</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. INPUTS -->
+    <div class="sg">
+      <div class="sg-t">6. Inputs</div>
+      <div class="sg-flex">
+        <input type="email" class="field" placeholder="seu@email.com">
+        <button class="btn-p">Enviar &rarr;</button>
+      </div>
+    </div>
+
+    <!-- 7. COMPARATIVO -->
+    <div class="sg">
+      <div class="sg-t">7. Comparativo (células)</div>
+      <div class="sg-flex" style="gap:2rem">
+        <div><div class="sg-l">.ct-check</div><span class="ct-check" style="font-size:1.1rem">&check; Aprovado</span></div>
+        <div><div class="sg-l">.ct-x</div><span class="ct-x" style="font-size:1.1rem">&cross; Reprovado</span></div>
+        <div><div class="sg-l">.ct-maybe</div><span class="ct-maybe" style="font-size:1.1rem">~ Parcial</span></div>
+      </div>
+    </div>
+
+    <!-- 8. INTEGRACOES -->
+    <div class="sg">
+      <div class="sg-t">8. Integrações</div>
+      <div class="sg-flex">
+        <span class="integ-badge"><svg class="integ-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>WhatsApp</span>
+        <span class="integ-badge"><svg class="integ-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>SAP</span>
+        <span class="integ-badge"><svg class="integ-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Salesforce</span>
+      </div>
+    </div>
+
+    <!-- 9. MOCKUPS -->
+    <div class="sg">
+      <div class="sg-t">9. Mockups</div>
+      <div class="sg-flex" style="align-items:flex-start;gap:2rem">
+        <div class="mock">
+          <div class="mock-bar"><span class="mock-title">pipeline.monitor</span><span class="mock-status">live</span></div>
+          <div class="mock-row"><span>Prospecção</span><span class="mock-val">1.247</span></div>
+          <div class="mock-row"><span>Qualificados</span><span class="mock-val pos">847</span></div>
+          <div class="mock-row"><span>Taxa</span><span class="mock-val acc">68%</span></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="mock-title">chat.agent</span><span class="mock-status">online</span></div>
+          <div class="chat-msgs">
+            <div class="chat-msg in">Preciso de ajuda</div>
+            <div class="chat-msg out">Como posso ajudar?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

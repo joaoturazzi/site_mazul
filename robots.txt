@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+Sitemap: https://mazul.com.br/sitemap.xml
+
+# Mazul Solutions — https://mazul.com.br

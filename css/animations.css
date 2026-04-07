@@ -1,0 +1,163 @@
+/* ============================================
+   MAZUL — animations.css
+   Keyframes, hover states, motion
+   ============================================ */
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: .4; transform: scale(.7); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes scrollLine {
+  0%, 100% { transform: scaleX(1); opacity: .4; }
+  50%      { transform: scaleX(1.6); opacity: 1; }
+}
+@keyframes growLine { to { transform: scaleX(1); } }
+
+/* Hero scanline */
+@keyframes scan {
+  0%   { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
+}
+.hero-scan {
+  position: absolute; left: 0; right: 0; z-index: 1;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(0,204,255,0.04), transparent);
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+}
+
+/* Mockup depth in feature blocks — subtle */
+.fb .mock {
+  position: relative;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.fb-mockup:hover .mock {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* CTA button pulse */
+@keyframes btnPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,204,255,0.4); }
+  50%      { box-shadow: 0 0 0 8px rgba(0,204,255,0); }
+}
+.cta-section .btn-p { animation: btnPulse 2.5s ease-in-out infinite; }
+.cta-section .btn-p:hover { animation: none; }
+
+/* CTA floating particles */
+.cta-particles { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+.cp {
+  position: absolute; width: 4px; height: 4px;
+  border-radius: 50%; background: var(--accent);
+  opacity: 0; animation: floatParticle 6s ease-in-out infinite;
+}
+.cp1 { left: 20%; top: 30%; }
+.cp2 { left: 70%; top: 60%; animation-delay: 2s; }
+.cp3 { left: 50%; top: 20%; animation-delay: 4s; }
+
+@keyframes floatParticle {
+  0%   { opacity: 0; transform: translateY(0) scale(1); }
+  20%  { opacity: 0.4; }
+  80%  { opacity: 0.2; }
+  100% { opacity: 0; transform: translateY(-80px) scale(0.5); }
+}
+
+/* Progress bar */
+#progress-bar {
+  position: fixed; top: 0; left: 0; height: 2px;
+  background: linear-gradient(to right, var(--accent), rgba(0,204,255,0.55));
+  box-shadow: 0 0 10px rgba(0,204,255,0.45), 0 0 2px rgba(0,204,255,0.8);
+  z-index: 9998;
+  width: 0%; transition: width 0.1s linear;
+}
+
+/* --- Card hover states --- */
+.arch-card,
+.vc,
+.test-card,
+.step {
+  transition: transform 0.4s cubic-bezier(.25,.46,.45,.94),
+              box-shadow 0.4s ease,
+              background 0.25s ease;
+}
+.arch-card:hover,
+.vc:hover:not(.hl),
+.test-card:hover,
+.step:hover {
+  transform: translateY(-4px);
+}
+
+.integ-badge {
+  transition: border-color .2s, color .2s, transform .2s;
+}
+.integ-badge:hover {
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.faq-item {
+  transition: background .2s ease;
+}
+.faq-item:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+/* --- Integ marquee --- */
+.integ-marquee-wrap {
+  overflow: hidden; position: relative;
+  display: flex; flex-direction: column; gap: 12px;
+  margin: 2.5rem 0 1.5rem;
+}
+.integ-marquee-wrap::before,
+.integ-marquee-wrap::after {
+  content: ''; position: absolute; top: 0; bottom: 0;
+  width: 120px; z-index: 2; pointer-events: none;
+}
+.integ-marquee-wrap::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+.integ-marquee-wrap::after { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+.integ-track { display: flex; gap: 10px; width: max-content; }
+.integ-track--fwd { animation: marquee-fwd 30s linear infinite; }
+.integ-track--rev { animation: marquee-rev 25s linear infinite; }
+@keyframes marquee-fwd { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes marquee-rev { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+
+/* --- iOS: prevent sticky hover after touch --- */
+@media (hover: none) {
+  .arch-card:hover, .vc:hover, .test-card:hover,
+  .stat-card:hover, .integ-badge:hover, .step:hover,
+  .fb:hover .fb-mockup .mock {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* --- Reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .ticker-wrap, .ticker-wrap2 { animation: none; }
+  .fade-up { opacity: 1 !important; transform: none !important; }
+  .hero-title .line { transform: none !important; }
+  .hero-sub { opacity: 1 !important; transform: none !important; }
+  .hero-actions { opacity: 1 !important; }
+  .hero-accent-line { transform: scaleX(1) !important; }
+  .hero-scan { display: none !important; }
+  .badge-dot { animation: none !important; }
+  .cp { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  .hero-scan { display: none; }
+}

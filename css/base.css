@@ -1,0 +1,192 @@
+/* ============================================
+   MAZUL — base.css
+   Reset, tokens, tipografia, utilitários
+   ============================================ */
+
+/* --- Reset --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img, video, iframe { max-width: 100%; }
+.integ-track, .ticker-wrap, .ticker-wrap2 { max-width: none; }
+html { scroll-behavior: smooth; scrollbar-width: none; }
+::-webkit-scrollbar { display: none; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+button { border: none; background: none; cursor: pointer; font: inherit; }
+ul, ol { list-style: none; }
+input, textarea, select { font: inherit; }
+* { -webkit-tap-highlight-color: transparent; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-b);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Tokens --- */
+:root {
+  --accent:        #00CCFF;
+  --accent-dim:    rgba(0,204,255,0.10);
+  --accent-glow:   rgba(0,204,255,0.04);
+  --accent-border: rgba(0,204,255,0.25);
+
+  --bg:            #080808;
+  --bg-s:          #0D0D10;
+  --bg-s2:         #141418;
+  --bg-light:      #EDE9E0;
+
+  --text:          #F0EBE0;
+  --text-2:        rgba(240,235,224,0.62);
+  --text-3:        rgba(240,235,224,0.4);
+  --text-inv:      #0A0A0C;
+
+  --border:        rgba(255,255,255,0.07);
+  --border-2:      rgba(255,255,255,0.12);
+
+  --green:         #22C55E;
+  --red:           #F87171;
+  --amber:         #FBBF24;
+
+  --font-d: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-b: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-m: 'DM Mono', 'Courier New', Courier, monospace;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+
+  --max:    1200px;
+  --gap:    clamp(1.5rem, 4vw, 3rem);
+  --sec:    clamp(5rem, 10vw, 9rem);
+}
+
+/* --- Tipografia --- */
+.t-display {
+  font-family: var(--font-d); font-weight: 800;
+  font-size: clamp(2.4rem, 5.5vw, 5.5rem);
+  line-height: 1.0; letter-spacing: -.03em;
+}
+.t-h1 {
+  font-family: var(--font-d); font-weight: 800;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.0; letter-spacing: -.028em;
+}
+.t-h2 {
+  font-family: var(--font-d); font-weight: 700;
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  line-height: 1.05; letter-spacing: -.02em;
+}
+.t-h3 {
+  font-family: var(--font-d); font-weight: 700;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  line-height: 1.15; letter-spacing: -.015em;
+}
+.t-body {
+  font-family: var(--font-b); font-weight: 300;
+  font-size: clamp(.9rem, 1.5vw, 1.05rem);
+  line-height: 1.75; color: var(--text-2);
+}
+.t-sm {
+  font-family: var(--font-b); font-weight: 300;
+  font-size: .875rem; line-height: 1.65; color: var(--text-2);
+}
+.t-stat {
+  font-family: var(--font-d); font-weight: 800;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  letter-spacing: -.03em;
+}
+.t-eye {
+  font-family: var(--font-m); font-size: .68rem;
+  letter-spacing: .15em; text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex; align-items: center; gap: .6rem;
+}
+.t-eye::before {
+  content: ''; width: 20px; height: 1px;
+  background: var(--accent); flex-shrink: 0;
+}
+.t-cap {
+  font-family: var(--font-m); font-size: .68rem;
+  letter-spacing: .08em; color: var(--text-3);
+}
+.t-mono {
+  font-family: var(--font-m); font-size: .8rem;
+}
+
+/* --- Instrument Serif italic accent --- */
+.serif-italic,
+.serif-italic-muted {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em;
+}
+.serif-italic { color: var(--accent); }
+.serif-italic-muted { opacity: 0.6; color: inherit; }
+
+/* --- Utilitários --- */
+.wrap    { max-width: var(--max); margin: 0 auto; padding: 0 var(--gap); }
+.sec     { padding: var(--sec) var(--gap); max-width: var(--max); margin: 0 auto; }
+.accent  { color: var(--accent); }
+.muted   { color: var(--text-3); }
+
+.fade-up {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.fade-up.vis { opacity: 1; transform: none; }
+
+/* --- Logo SVG --- */
+.logo {
+  display: inline-flex; align-items: center; gap: .55rem;
+  text-decoration: none;
+}
+.logo-mark {
+  width: 32px; height: 32px; flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.logo:hover .logo-mark { transform: scale(1.06); }
+.logo-text {
+  font-family: var(--font-d); font-size: 1.25rem;
+  font-weight: 800; letter-spacing: -.02em; color: var(--text);
+}
+.logo-z { color: var(--accent); }
+.footer-logo-wrap .logo-text { font-size: 1.35rem; }
+.footer-logo-wrap .logo-mark { width: 36px; height: 36px; }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 204, 255, 0.18);
+  color: var(--text);
+}
+
+/* --- Grain texture --- */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+
+/* Anchor offset for fixed nav */
+section[id], div[id] { scroll-margin-top: 100px; }
+
+/* Skip nav */
+.skip-nav {
+  position: absolute; top: -100px; left: 1rem; z-index: 9999;
+  background: var(--accent); color: #000; font-family: var(--font-b);
+  font-weight: 500; font-size: .875rem; padding: .6rem 1.2rem;
+  border-radius: 0 0 8px 8px; transition: top .2s;
+}
+.skip-nav:focus { top: 0; outline: none; }
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
