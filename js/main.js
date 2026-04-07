@@ -9,6 +9,16 @@
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* Force steps visible after 600ms in case GSAP stalls */
+  setTimeout(function () {
+    $$('.step').forEach(function (el) {
+      if (window.getComputedStyle(el).opacity === '0') {
+        el.style.opacity = '1'; el.style.transform = 'none';
+      }
+    });
+    if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+  }, 600);
+
   /* Suppress ResizeObserver warnings */
   window.addEventListener('error', function (e) {
     if (e.message && e.message.indexOf('ResizeObserver') !== -1) e.stopImmediatePropagation();

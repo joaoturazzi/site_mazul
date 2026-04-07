@@ -139,7 +139,7 @@
   color: var(--accent); font-family: var(--font-m);
   font-size: .68rem; letter-spacing: .12em; text-transform: uppercase;
   padding: .4rem 1rem; border-radius: 100px;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.75rem;
 }
 .badge-dot {
   width: 6px; height: 6px; border-radius: 50%;
