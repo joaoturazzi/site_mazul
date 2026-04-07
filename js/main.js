@@ -294,24 +294,21 @@
     if (!G || !ST || reduced) return;
     gsap.registerPlugin(ScrollTrigger);
 
-    /* Hero entrance — uses gsap.set + gsap.to (never gsap.from) */
-    gsap.set(['#hero-badge', '#hero-sub', '#hero-actions', '#hero-stats', '#hero-scroll'], { opacity: 0, y: 16 });
+    /* Hero entrance */
+    gsap.set(['#hero-badge', '#hero-sub', '#hero-actions'], { opacity: 0, y: 16 });
     gsap.set('.hero-title .line', { opacity: 0, yPercent: 100 });
-    gsap.set('.hero-accent-line', { width: 0 });
+    gsap.set('.hero-accent-line', { opacity: 0, width: 0 });
 
-    var heroTL = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    heroTL
-      .to('#hero-badge', { opacity: 1, y: 0, duration: 0.5, delay: 0.15 })
+    gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
+      .to('#hero-badge', { opacity: 1, y: 0, duration: 0.5 })
       .to('.hero-title .line', { opacity: 1, yPercent: 0, stagger: 0.1, duration: 0.85 }, '-=0.2')
-      .to('.hero-accent-line', { width: 56, opacity: 0.8, duration: 0.5 }, '-=0.4')
-      .to('#hero-sub', { opacity: 1, y: 0, duration: 0.6 }, '-=0.3')
-      .to('#hero-actions', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3')
-      .to('#hero-stats', { opacity: 1, y: 0, duration: 0.5 }, '-=0.2')
-      .to('#hero-scroll', { opacity: 1, y: 0, duration: 0.4 }, '-=0.1');
+      .to('.hero-accent-line', { opacity: 0.85, width: '48px', duration: 0.5 }, '-=0.5')
+      .to('#hero-sub', { opacity: 1, y: 0, duration: 0.6 }, '-=0.35')
+      .to('#hero-actions', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3');
 
-    /* Safety: force visible after 3s if timeline stalls */
+    /* Safety: force visible after 3s */
     setTimeout(function () {
-      ['#hero-badge', '#hero-sub', '#hero-actions', '#hero-stats', '#hero-scroll'].forEach(function (s) {
+      ['#hero-badge', '#hero-sub', '#hero-actions'].forEach(function (s) {
         var el = document.querySelector(s);
         if (el && parseFloat(getComputedStyle(el).opacity) < 0.5) {
           gsap.set(el, { opacity: 1, y: 0, clearProps: 'all' });
