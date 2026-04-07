@@ -279,7 +279,7 @@ table.ct tbody tr { transition: background .2s; }
 }
 
 /* --- COMO FUNCIONA --- */
-.steps-header { margin-bottom: 3rem; }
+.steps-header { margin: 0 0 2.5rem 0; padding: 0; }
 .steps-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
   position: relative; max-width: var(--max); margin: 0 auto;
@@ -512,14 +512,16 @@ table.ct tbody tr { transition: background .2s; }
 }
 
 /* --- FAQ --- */
-.section-faq { background: var(--bg-s); padding: var(--sec) var(--gap); }
+.section-faq { background: var(--bg-s); padding: var(--sec) var(--gap); overflow: visible; }
 .faq-layout {
-  display: grid; grid-template-columns: 35% 1fr;
-  gap: 6rem; align-items: start;
+  display: grid; grid-template-columns: 380px 1fr;
+  gap: 5rem; align-items: start;
   max-width: var(--max); margin: 0 auto;
+  overflow: visible;
 }
-.faq-sticky { position: sticky; top: 7rem; }
-.faq-list { padding: 0; }
+.faq-sticky { position: sticky; top: 100px; padding-top: 0; margin-top: 0; }
+.faq-list { padding: 0; margin: 0; }
+.faq-item:first-child { border-top: 1px solid var(--border); }
 .faq-item { border-bottom: 1px solid var(--border); }
 .faq-q {
   display: flex; justify-content: space-between; align-items: center;
@@ -852,7 +854,7 @@ footer {
   .vert-header { flex-direction: column; align-items: flex-start; }
   .test-grid { grid-template-columns: 1fr; }
   .faq-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-  .faq-sticky { position: static; }
+  .faq-sticky { position: relative; top: auto; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .fb.odd .fb-bg::after,
   .fb.even .fb-bg::after { background: rgba(6,6,8,.92); }
